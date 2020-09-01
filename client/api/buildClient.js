@@ -5,7 +5,7 @@ const buildClient = ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'http://ingress-nginx-controller.kube-system.svc.cluster.local',
+      baseURL: 'http://www.ticketeer.xyz',
       headers: req.headers,
     });
   } else {
